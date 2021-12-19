@@ -1,0 +1,80 @@
+1. Создать внешний репозиторий c названием XML. - https://github.com/MishaTkachyk/XML.git
+2. Клонировать репозиторий XML на локальный компьютер. - git clone https://github.com/MishaTkachyk/XML.git
+3. Внутри локального XML создать файл “new.xml”. - touch new.xml
+4. Добавить файл под гит. - git add new.xml
+5. Закоммитить файл. - git commit -m "created file new.xml"
+6. Отправить файл на внешний GitHub репозиторий. - git push
+7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+<name>Tkachyk Mikhailo Mikhailovich</name>
+<city>Kyiv</city>
+<age>21</age>
+</person>
+8. Отправить изменения на внешний репозиторий.
+git commit -am "Add information about myself"
+git push
+9. Создать файл preferences.xml - touch preferences.xml
+10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+<preferences>
+<Favorite_movie>All parts of Harry Potter</Favorite_movie>
+<Favorite_series>Game of Thrones</Favorite_series>
+<Favorite_food>tasty dish</Favorite_food>
+<Favorite_season_of_the_year>Summer</Favorite_season_of_the_year>
+<Where_would_I_like_to_visit>Iceland</Where_would_I_like_to_visit>
+</preferences>
+11. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim touch skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Course_program>
+<Cours1>Basic theory(What is testing,bug-reports,documentation,kinds,methods,testing directions,SDLC,STLC)</Cours1>
+<Cours2>What is client-server architecture</Cours2>
+<Cours3>Server request methods</Cours3>
+<Cours4>Answers server</Cours4>
+<Cours5>Request and response structures</Cours5>
+<Cours6>What JSON, XML. Their structure</Cours6>
+<Cours7>Testing API</Cours7>
+<Cours8>Withdrawal and reading logs</Cours8>
+<Cours9>Postman, Fidler</Cours9>
+<Cours10>VPN.(How it works, why you need it, how to use it, tool options)</Cours10>
+<Cours11>Dev Tools web browsers (Google Chrome, FireFox)</Cours11>
+<Cours12>Mobile testing</Cours12>
+<Cours13>Peculiarity iOS,Android,guidelines</Cours13>
+<Cours14>Building iOS apps with Xcode</Cours14>
+<Cours15>Building Android applications on Android Studio</Cours15>
+<Cours16>Interception of mobile traffic (sniffing) across Charles</Cours16>
+<Cours17>Setting a proxy on iOS and Android</Cours17>
+<Cours18>Command line (terminal) Linux Ubuntu. Copy, create, view, move files on servers without a GUI</Cours18>
+<Cours19>Simple bash scripting, automation of routine tasks on the server</Cours19>
+<Cours20>Access to remote servers</Cours20>
+<Cours21>The basics SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join</Cours21>
+<Cours22>Git</Cours22>
+<Cours23>Jmeter</Cours23>
+<Cours24>Scrum development methodology</Cours24>
+<Cours25>Python.Creating your own client-server application</Cours25>
+</Course_program>
+12. Сделать коммит в одну строку. - git commit -am "Создал два XML файла"
+13. Отправить сразу 2 файла на внешний репозиторий. - git push
+14. На веб интерфейсе создать файл bug_report.xml.
+15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+<ID>12345</ID>
+<title>the cart button on the page is not clickable https://11111.club</title>
+<Expected_result>When you click on the basket icon, a page with the previously added product will open</Expected_result>
+<Actual_result>When you click on the basket icon, nothing happens, the icon is not clickable</Actual_result>
+<Steps_to_reproduce>
+  <steps1>Open https://222.club</steps1>
+  <steps2>Add any product to the cart</steps2>
+  <steps3>Go to the payment page https://11111.club</steps3>
+  <steps4>Click on the trash can icon</steps4>
+</Steps_to_reproduce>
+<Severity>Minor</Severity>
+<Priority>Medium</Priority>
+<Environment>Google Chrome Version 96.0.4664.55 (Official assembly),(x86_64)</Environment>
+</bug_report>
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+18. Синхронизировать внешний и локальный репозиторий XML - git pull
